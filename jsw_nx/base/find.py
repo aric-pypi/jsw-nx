@@ -1,5 +1,5 @@
-def find(list, fn):
-    for i in range(len(list)):
-        if fn(list[i], i):
-            return list[i]
+def find(arr, fn):
+    for i in range(len(arr)):
+        if fn(arr[i], i):
+            return arr[i]
     return None

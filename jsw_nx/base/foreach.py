@@ -1,3 +1,3 @@
-def foreach(list, func):
-    for item in list:
+def foreach(arr, func):
+    for item in arr:
         func(item)

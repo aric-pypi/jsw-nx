@@ -1,5 +1,5 @@
-def indexof(list, value):
-    for i, v in enumerate(list):
+def indexof(arr, value):
+    for i, v in enumerate(arr):
         if v == value:
             return i
     return -1

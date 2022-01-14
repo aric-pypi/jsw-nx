@@ -1,5 +1,5 @@
-def find_index(list, fn):
-    for i in range(len(list)):
-        if fn(list[i], i):
+def find_index(arr, fn):
+    for i in range(len(arr)):
+        if fn(arr[i], i):
             return i
     return -1
