@@ -32,3 +32,11 @@ def test_base_filter():
 def test_base_mix():
     res = jsw_nx.mix(None, {"a": 123, "b": "234"}, {"c": 'AAA'})
     assert res == {"a": 123, "b": '234', "c": "AAA"}
+
+
+def test_rubify_to_f():
+    assert jsw_nx.to_f('123.33') == 123.33
+    assert jsw_nx.to_i('123') == 123
+    assert jsw_nx.to_n('123') == 123
+    assert jsw_nx.to_n('123.33') == 123.33
+    assert jsw_nx.to_s(12.3) == '12.3'

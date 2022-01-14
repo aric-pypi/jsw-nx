@@ -15,7 +15,7 @@ nx.includes([1,2,3], 2) # => True
 nx.includes([1,2,3], 5) # => False
 ```
 
-## methods
+## next core methods
 - base/filter
 - base/find
 - base/find_index
@@ -27,3 +27,12 @@ nx.includes([1,2,3], 5) # => False
 - base/map
 - base/reduce
 - base/set
+
+## ruby style
+- rubify/to_f
+- rubify/to_i
+- rubify/to_n
+- rubify/to_s
+
+## next packages
+- days

@@ -1,2 +1,2 @@
-def to_f(str):
-    return float(str)
+def to_f(string):
+    return float(string)

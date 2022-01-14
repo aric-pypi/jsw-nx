@@ -1,2 +1,2 @@
-def to_i(str):
-    return int(str)
+def to_i(string):
+    return int(string)

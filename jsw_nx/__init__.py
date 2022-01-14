@@ -17,6 +17,7 @@ from jsw_nx.base.mix import mix
 from jsw_nx.rubify.to_i import to_i
 from jsw_nx.rubify.to_f import to_f
 from jsw_nx.rubify.to_s import to_s
+from jsw_nx.rubify.to_n import to_n
 
 # next packages
 from jsw_nx.packages.days import days
