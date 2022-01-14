@@ -27,3 +27,8 @@ def test_base_reduce():
 
 def test_base_filter():
     assert jsw_nx.filter([1, 2, 3], lambda v, i: v > 1) == [2, 3]
+
+
+def test_base_mix():
+    res = jsw_nx.mix(None, {"a": 123, "b": "234"}, {"c": 'AAA'})
+    assert res == {"a": 123, "b": '234', "c": "AAA"}
