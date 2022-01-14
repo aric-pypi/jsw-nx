@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Next toolkit for python.",
   "scripts": {
-    "test": "poetry pytest",
+    "test": "poetry run pytest",
     "build": "poetry build",
     "pubpypi": "poetry publish"
   },
