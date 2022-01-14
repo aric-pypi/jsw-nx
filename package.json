@@ -1,6 +1,6 @@
 {
   "name": "@jswork/jsw-nx",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Next toolkit for python.",
   "scripts": {
     "test": "poetry run pytest",

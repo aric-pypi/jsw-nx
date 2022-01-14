@@ -1,2 +1,3 @@
-def includes():
-    print('includes nx.')
+from .indexof import indexof
+def includes(list, value):
+    return indexof(list, value) > 0
