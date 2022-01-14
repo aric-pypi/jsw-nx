@@ -12,6 +12,7 @@ from jsw_nx.base.map import map
 from jsw_nx.base.reduce import reduce
 from jsw_nx.base.filter import filter
 from jsw_nx.base.mix import mix
+from jsw_nx.base.get import get
 
 # ruby style
 from jsw_nx.rubify.to_i import to_i

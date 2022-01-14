@@ -34,6 +34,31 @@ def test_base_mix():
     assert res == {"a": 123, "b": '234', "c": "AAA"}
 
 
+def test_base_get():
+    test_data = {
+        'name': 'wonder',
+        'contact': {
+            'phone': 110,
+            'sns': {
+                'qq': {
+                    'code': 112,
+                }
+            }
+        },
+    }
+
+    assert jsw_nx.get(test_data, 'name') == 'wonder'
+    assert jsw_nx.get(test_data, 'english_name') == None
+    assert jsw_nx.get(test_data, 'contact.phone') == 110
+    assert jsw_nx.get(test_data, 'contact.phone.mobile') == None
+    assert jsw_nx.get(test_data, 'contact.sns.qq.code') == 112
+    assert jsw_nx.get(test_data, 'other1.other2.other3') == None
+    assert jsw_nx.get(None, 'name') == None
+    assert jsw_nx.get(100, 'name') == None
+    assert jsw_nx.get('some', 'name') == None
+    assert jsw_nx.get('some', 'name', 'wonder') == 'wonder'
+
+
 def test_rubify_to_f():
     assert jsw_nx.to_f('123.33') == 123.33
     assert jsw_nx.to_i('123') == 123
