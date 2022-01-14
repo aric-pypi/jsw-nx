@@ -1,4 +1,5 @@
 # https://gist.github.com/wonderbeyond/085f7a8a4bfbf092b830
+# https://pypi.org/project/dict-deep/
 def get(data, key, default=None, raising=False):
     value = data
     try:
