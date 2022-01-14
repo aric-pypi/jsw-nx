@@ -1,0 +1,21 @@
+{
+  "name": "@jswork/jsw-nx",
+  "version": "1.0.0",
+  "description": "Next toolkit for python.",
+  "scripts": {
+    "test": "poetry pytest",
+    "build": "poetry build",
+    "pubpypi": "poetry publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aric-pypi/jsw-nx.git"
+  },
+  "keywords": [],
+  "author": "afeiship",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aric-pypi/jsw-nx/issues"
+  },
+  "homepage": "https://github.com/aric-pypi/jsw-nx#readme"
+}
