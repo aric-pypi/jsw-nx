@@ -19,6 +19,8 @@ from jsw_nx.rubify.to_i import to_i
 from jsw_nx.rubify.to_f import to_f
 from jsw_nx.rubify.to_s import to_s
 from jsw_nx.rubify.to_n import to_n
+from jsw_nx.rubify.to_a import to_a
+from jsw_nx.rubify.times import times
 
 # next packages
 from jsw_nx.packages.days import days
