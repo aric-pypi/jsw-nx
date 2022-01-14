@@ -4,6 +4,8 @@ version = "1.0.4"
 description = "Next toolkit for python."
 authors = ["feizheng <1290657123@qq.com>"]
 readme = "README.md"
+repourl = "https://github.com/aric-pypi/jsw-nx"
+homepage = "https://js.work"
 
 [tool.poetry.dependencies]
 python = "^3.9"
