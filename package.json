@@ -1,8 +1,10 @@
 {
   "name": "@jswork/jsw-nx",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "private": true,
   "description": "Next toolkit for python.",
   "scripts": {
+    "bump": "poetry version patch",
     "test": "poetry run pytest",
     "build": "poetry build",
     "pubpypi": "poetry publish"
