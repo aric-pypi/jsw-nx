@@ -23,3 +23,7 @@ def test_base_map():
 
 def test_base_reduce():
     assert jsw_nx.reduce([1, 2, 3], lambda res, v, i: res + v) == 6
+
+
+def test_base_filter():
+    assert jsw_nx.filter([1, 2, 3], lambda v, i: v > 1) == [2, 3]

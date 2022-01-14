@@ -9,4 +9,5 @@ from jsw_nx.base.find import find
 from jsw_nx.base.find_index import find_index
 from jsw_nx.base.map import map
 from jsw_nx.base.reduce import reduce
+from jsw_nx.base.filter import filter
 from jsw_nx.packages.days import days
