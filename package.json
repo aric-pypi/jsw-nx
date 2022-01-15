@@ -1,6 +1,5 @@
 {
   "name": "@jswork/jsw-nx",
-  "version": "1.0.8",
   "private": true,
   "description": "Next toolkit for python.",
   "scripts": {
@@ -13,9 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/aric-pypi/jsw-nx.git"
   },
-  "keywords": [],
+  "keywords": ["jswork", "nx", "next", "toolkit", "python"],
   "author": "afeiship",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aric-pypi/jsw-nx/issues"
   },

@@ -23,12 +23,15 @@ nx.includes([1,2,3], 5) # => False
 - base/forin
 - base/get
 - base/includes
-- base/indexof
+- base/index
 - base/map
 - base/reduce
 - base/set
 
 ## ruby style
+- rubify/times
+- rubify/to_a
+- rubify/to_b
 - rubify/to_f
 - rubify/to_i
 - rubify/to_n
