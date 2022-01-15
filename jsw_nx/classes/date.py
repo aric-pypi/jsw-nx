@@ -22,5 +22,11 @@ class Date:
         return int(datetime.now().timestamp())
 
     @classmethod
-    def from_str(cls, in_str):
-        return datetime.fromisoformat(in_str)
+    def create(cls, target):
+        if type(target) is str:
+            return datetime.fromisoformat(target)
+        if type(target) is int:
+            return datetime.fromtimestamp(target)
+        if type(target) is datetime:
+            return target
+        return None

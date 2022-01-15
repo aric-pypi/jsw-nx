@@ -44,4 +44,4 @@ nx.includes([1,2,3], 5) # => False
 + date
   - format 
   - now 
-  - from_str
+  - create
