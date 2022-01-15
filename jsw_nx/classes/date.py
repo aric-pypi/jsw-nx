@@ -20,3 +20,7 @@ class Date:
     @classmethod
     def now(cls):
         return int(datetime.now().timestamp())
+
+    @classmethod
+    def from_str(cls, in_str):
+        return datetime.fromisoformat(in_str)
