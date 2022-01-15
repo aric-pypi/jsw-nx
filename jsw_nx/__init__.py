@@ -1,4 +1,7 @@
-__version__ = '1.0.6'
+import pkg_resources
+
+version = pkg_resources.get_distribution('jsw-nx').version
+__version__ = version
 
 # next base
 from jsw_nx.base.filter import filter
@@ -14,7 +17,6 @@ from jsw_nx.base.mix import mix
 from jsw_nx.base.reduce import reduce
 from jsw_nx.base.set import set
 
-
 # ruby style
 from jsw_nx.rubify.times import times
 from jsw_nx.rubify.to_a import to_a
@@ -26,6 +28,7 @@ from jsw_nx.rubify.to_s import to_s
 
 # next packages
 from jsw_nx.packages.days import days
+from jsw_nx.packages.fileutils import FileUtils as fileutils
 
 # next classes
 from jsw_nx.classes.date import Date

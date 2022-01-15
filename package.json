@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/aric-pypi/jsw-nx.git"
   },
-  "keywords": ["jswork", "nx", "next", "toolkit", "python"],
+  "keywords": [
+    "jswork",
+    "nx",
+    "next",
+    "toolkit",
+    "python"
+  ],
   "author": "afeiship",
   "license": "MIT",
   "bugs": {
