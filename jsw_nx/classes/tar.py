@@ -8,7 +8,7 @@ import os
 
 class Tar:
     @classmethod
-    def pack(cls, filename, mode="w:gz"):
+    def gz(cls, filename, mode="w:gz"):
         dirname = os.path.dirname(filename)
         file = os.path.basename(filename)
         tar = tarfile.open(file, mode)
@@ -20,7 +20,7 @@ class Tar:
         tar.close()
 
     @classmethod
-    def unpack(cls, filepath, target_path, mode="r:gz"):
+    def xz(cls, filepath, target_path, mode="r:gz"):
         try:
             tar = tarfile.open(filepath, mode)
             file_names = tar.getnames()

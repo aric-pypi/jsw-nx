@@ -57,5 +57,5 @@ nx.includes([1,2,3], 5) # => False
   - isdir
   - exists
 + tar
-  - pack
-  - unpack
+  - gz
+  - xz
