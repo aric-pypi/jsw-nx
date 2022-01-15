@@ -45,3 +45,17 @@ nx.includes([1,2,3], 5) # => False
   - format 
   - now 
   - create
++ fileutils
+  - mkdir_p
+  - cd
+  - pwd
+  - ls
+  - rmdir
+  - touch
+  - cp_r
+  - isfile
+  - isdir
+  - exists
++ tar
+  - pack
+  - unpack

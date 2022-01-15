@@ -83,3 +83,28 @@ class FileUtils:
             if opts.verbose:
                 print("Copying directory: {}".format(src))
             shutil.copytree(src, dest)
+
+    @classmethod
+    def isfile(cls, target):
+        """
+        Check if a file exists.
+        """
+        return os.path.isfile(target)
+
+    @classmethod
+    def isdir(cls, target):
+        """
+        Check if a dir exists.
+        :param target:
+        :return:
+        """
+        return os.path.isdir(target)
+
+    @classmethod
+    def exists(cls, target):
+        """
+        Check if a file or dir exists.
+        :param target:
+        :return:
+        """
+        return os.path.exists(target)
