@@ -1,3 +1,5 @@
-from .indexof import indexof
+from .index import index
+
+
 def includes(arr, value):
-    return indexof(arr, value) > 0
+    return index(arr, value) > 0
