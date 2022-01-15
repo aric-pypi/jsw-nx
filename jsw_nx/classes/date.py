@@ -6,7 +6,7 @@ STANDARD_FORMAT = {
     'date': '%Y-%m-%d',
     'time': '%H:%M:%S',
     'month': '%Y-%m',
-    'dbdt': '%Y%m%d_%H:%M:%S'
+    'dbdt': '%Y%m%d_%H%M%S'
 }
 
 
