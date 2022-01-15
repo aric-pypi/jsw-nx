@@ -39,3 +39,8 @@ nx.includes([1,2,3], 5) # => False
 
 ## next packages
 - days
+
+## next classes
++ date
+  - format 
+  - now 

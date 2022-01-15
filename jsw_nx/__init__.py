@@ -26,3 +26,6 @@ from jsw_nx.rubify.to_s import to_s
 
 # next packages
 from jsw_nx.packages.days import days
+
+# next classes
+from jsw_nx.classes.date import Date
