@@ -40,7 +40,7 @@ nx.includes([1,2,3], 5) # => False
 
 ## next packages
 - days
-- tmpl
+- [tmpl](https://js.work/posts/34ef06b7870ec)
 
 ## next classes
 + date
