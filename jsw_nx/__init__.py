@@ -16,6 +16,7 @@ from jsw_nx.base.map import map
 from jsw_nx.base.mix import mix
 from jsw_nx.base.reduce import reduce
 from jsw_nx.base.set import set
+from jsw_nx.base.type import type
 
 # ruby style
 from jsw_nx.rubify.times import times
@@ -28,6 +29,7 @@ from jsw_nx.rubify.to_s import to_s
 
 # next packages
 from jsw_nx.packages.days import days
+from jsw_nx.packages.tmpl import tmpl
 
 # next classes
 from jsw_nx.classes.date import Date

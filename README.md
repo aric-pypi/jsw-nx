@@ -27,6 +27,7 @@ nx.includes([1,2,3], 5) # => False
 - base/map
 - base/reduce
 - base/set
+- base/type
 
 ## ruby style
 - rubify/times
