@@ -59,6 +59,6 @@ nx.includes([1,2,3], 5) # => False
 + tar
   - gz
   - xz
-+ JSON
++ [JSON](https://js.work/posts/3dc24683e53c4)
   - parse
   - stringify
