@@ -29,8 +29,8 @@ from jsw_nx.rubify.to_s import to_s
 # next packages
 from jsw_nx.packages.days import days
 
-
 # next classes
 from jsw_nx.classes.date import Date
 from jsw_nx.classes.fileutils import FileUtils as fileutils
 from jsw_nx.classes.tar import Tar as tar
+from jsw_nx.classes.json import JSON
