@@ -4,7 +4,7 @@ import shutil
 
 class FileUtils:
     @classmethod
-    def mkdir_p(cls, in_dir, opts):
+    def mkdir_p(cls, in_dir, opts = None):
         """
         Create a directory and all parent directories.
         :param in_dir:
@@ -42,7 +42,7 @@ class FileUtils:
         return os.listdir(in_dir)
 
     @classmethod
-    def rmdir(cls, in_dir, opts):
+    def rmdir(cls, in_dir, opts = None):
         """
         Remove a directory.
         :param in_dir:
@@ -54,7 +54,7 @@ class FileUtils:
         os.rmdir(in_dir)
 
     @classmethod
-    def touch(cls, in_list, opts):
+    def touch(cls, in_list, opts = None):
         """
         Create a file.
         :param in_list:
@@ -67,7 +67,7 @@ class FileUtils:
             open(f, 'a').close()
 
     @classmethod
-    def cp_r(cls, src, dest, opts):
+    def cp_r(cls, src, dest, opts = None):
         """
         Copy a file or directory recursively.
         :param src:
