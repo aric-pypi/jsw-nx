@@ -4,11 +4,10 @@ import shutil
 
 class FileUtils:
     @classmethod
-    def mkdir_p(cls, in_dir, opts = None):
+    def mkdir_p(cls, in_dir):
         """
         Create a directory and all parent directories.
         :param in_dir:
-        :param opts:
         :return:
         """
 
@@ -42,32 +41,27 @@ class FileUtils:
         return os.listdir(in_dir)
 
     @classmethod
-    def rmdir(cls, in_dir, opts = None):
+    def rmdir(cls, in_dir):
         """
         Remove a directory.
         :param in_dir:
         :param opts:
         :return:
         """
-        if opts.verbose:
-            print("Removing directory: {}".format(in_dir))
         os.rmdir(in_dir)
 
     @classmethod
-    def touch(cls, in_list, opts = None):
+    def touch(cls, in_file):
         """
         Create a file.
         :param in_list:
         :param opts:
         :return:
         """
-        for f in in_list:
-            if opts.verbose:
-                print("Creating file: {}".format(f))
-            open(f, 'a').close()
+        open(in_file, 'a').close()
 
     @classmethod
-    def cp_r(cls, src, dest, opts = None):
+    def cp_r(cls, src, dest):
         """
         Copy a file or directory recursively.
         :param src:
@@ -76,12 +70,8 @@ class FileUtils:
         :return:
         """
         if os.path.isfile(src):
-            if opts.verbose:
-                print("Copying file: {}".format(src))
             shutil.copy(src, dest)
         elif os.path.isdir(src):
-            if opts.verbose:
-                print("Copying directory: {}".format(src))
             shutil.copytree(src, dest)
 
     @classmethod
