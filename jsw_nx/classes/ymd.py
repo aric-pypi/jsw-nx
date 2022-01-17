@@ -1,4 +1,6 @@
 # year/month/day
+from ..packages.days import days as nx_days
+
 class Ymd:
     @classmethod
     def to_s(cls, ymd):
@@ -13,8 +15,8 @@ class Ymd:
     @classmethod
     def each_day(cls, year, fn):
         def inner_lambda(y, m):
-            days = nx.days(y, int(m))
+            days = nx_days(y, int(m))
             rdays = range(1, days + 1)
             for day in rdays:
-                fn(year, m, to_s(day))
+                fn(year, m, cls.to_s(day))
         cls.each_month(year, lambda y, m: inner_lambda(y, m))
