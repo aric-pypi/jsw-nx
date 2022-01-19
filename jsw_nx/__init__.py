@@ -30,7 +30,7 @@ from jsw_nx.rubify.to_s import to_s
 # next packages
 from jsw_nx.packages.days import days
 from jsw_nx.packages.tmpl import tmpl
-from jsw_nx.packages.hashlize import hashlize
+from jsw_nx.packages.qs import qs
 
 # next classes
 from jsw_nx.classes.date import Date

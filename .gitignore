@@ -3,7 +3,7 @@ dist
 __pycache__
 poetry.lock
 node_modules
-
+.pytest_cache
 # zip file
 *.tar.gz
 *.zip
