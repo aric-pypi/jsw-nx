@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jsw-nx"
-version = "1.0.33"
+version = "1.0.34"
 description = "Next toolkit for python."
 authors = ["feizheng <1290657123@qq.com>"]
 readme = "README.md"
@@ -8,7 +8,7 @@ repository = "https://github.com/aric-pypi/jsw-nx"
 homepage = "https://js.work"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
