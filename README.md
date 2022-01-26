@@ -54,6 +54,7 @@ nx.includes([1,2,3], 5) # => False
   - cd
   - pwd
   - ls
+  - mv
   - rmdir
   - touch
   - cp_r

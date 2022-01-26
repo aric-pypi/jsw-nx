@@ -41,6 +41,16 @@ class FileUtils:
         return os.listdir(in_dir)
 
     @classmethod
+    def mv(cls, src, dest):
+        """
+        Move a file or directory.
+        :param src:
+        :param dest:
+        :return:
+        """
+        shutil.move(src, dest)
+
+    @classmethod
     def rmdir(cls, in_dir):
         """
         Remove a directory.
