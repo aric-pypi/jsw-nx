@@ -41,6 +41,7 @@ nx.includes([1,2,3], 5) # => False
 ## next packages
 - days
 - deep_each
+- is_process_alive
 - qs
 - [tmpl](https://js.work/posts/34ef06b7870ec)
 
