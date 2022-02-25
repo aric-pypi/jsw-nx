@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-pip install jsw-nx
+pip install jsw-nx -U
 ```
 
 ## usage
@@ -62,6 +62,7 @@ nx.includes([1,2,3], 5) # => False
   - isfile
   - isdir
   - exists
+  - gbk_to_utf8
 + tar
   - gz
   - xz

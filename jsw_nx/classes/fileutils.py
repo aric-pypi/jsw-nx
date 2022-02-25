@@ -108,3 +108,18 @@ class FileUtils:
         :return:
         """
         return os.path.exists(target)
+
+    @classmethod
+    def gbk_to_utf8(cls, source, target, callback=None):
+        """
+        Convert GBK to UTF-8.
+        :param target:
+        :param callback:
+        :return:
+        """
+        with open(source, "r", encoding="gbk") as src:
+            with open(target, "w", encoding="utf-8") as dst:
+                for line in src.readlines():
+                    if callback:
+                        line = callback(line)
+                    dst.write(line)
