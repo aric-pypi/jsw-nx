@@ -43,6 +43,7 @@ nx.includes([1,2,3], 5) # => False
 - deep_each
 - is_process_alive
 - qs
+- replace_dict_all
 - [tmpl](https://js.work/posts/34ef06b7870ec)
 
 ## next classes
