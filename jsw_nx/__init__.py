@@ -30,6 +30,7 @@ from jsw_nx.rubify.to_s import to_s
 # next packages
 from jsw_nx.packages.days import days
 from jsw_nx.packages.param import param
+from jsw_nx.packages.parse_cookie import parse_cookie
 from jsw_nx.packages.qs import qs
 from jsw_nx.packages.tmpl import tmpl
 from jsw_nx.packages.deep_each import deep_each
