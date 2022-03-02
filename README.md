@@ -47,6 +47,7 @@ nx.includes([1,2,3], 5) # => False
 - qs
 - replace_dict_all
 - [tmpl](https://js.work/posts/34ef06b7870ec)
+- uniq
 
 ## next classes
 + date
