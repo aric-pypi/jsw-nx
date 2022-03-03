@@ -34,7 +34,7 @@ class Date:
         return None
 
     @classmethod
-    def random_date(cls, start, end, in_fmt='%Y-%m-%d %H:%M:%S'):
+    def random_date(cls, start, end, in_fmt='datetime'):
         prop = random.random()
         fmt = STANDARD_FORMAT[in_fmt] or in_fmt
         stime = time.mktime(time.strptime(start, fmt))
