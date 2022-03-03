@@ -34,10 +34,24 @@ class Date:
         return None
 
     @classmethod
-    def random_date(cls, start, end, in_fmt='datetime'):
+    def random_date(cls, start, end, in_fmt='datetime', in_min_gap=75):
         prop = random.random()
         fmt = STANDARD_FORMAT[in_fmt] or in_fmt
         stime = time.mktime(time.strptime(start, fmt))
         etime = time.mktime(time.strptime(end, fmt))
-        ptime = stime + prop * (etime - stime)
+        gap = prop * (etime - stime)
+        if gap < in_min_gap:
+            gap = in_min_gap
+        ptime = stime + gap
         return time.strftime(fmt, time.localtime(ptime))
+
+    @classmethod
+    def random_date_list(cls, start, end, in_fmt='datetime', in_min_gap=75, in_count=10):
+        no_unique_list = []
+        fmt = STANDARD_FORMAT[in_fmt] or in_fmt
+        for i in range(in_count * 2):
+            last_el = no_unique_list[-1] if len(no_unique_list) > 0 else start
+            no_unique_list.append(cls.random_date(last_el, end, in_fmt, in_min_gap))
+        res = list(set(no_unique_list))[:in_count]
+        res.sort(key=lambda date: time.strptime(date, '%Y-%m-%d %H:%M:%S'))
+        return res
