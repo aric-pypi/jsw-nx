@@ -1,3 +1,5 @@
+import random
+import time
 from datetime import datetime
 
 STANDARD_FORMAT = {
@@ -30,3 +32,12 @@ class Date:
         if type(target) is datetime:
             return target
         return None
+
+    @classmethod
+    def random_date(cls, start, end, in_fmt='%Y-%m-%d %H:%M:%S'):
+        prop = random.random()
+        fmt = STANDARD_FORMAT[in_fmt] or in_fmt
+        stime = time.mktime(time.strptime(start, fmt))
+        etime = time.mktime(time.strptime(end, fmt))
+        ptime = stime + prop * (etime - stime)
+        return time.strftime(fmt, time.localtime(ptime))
