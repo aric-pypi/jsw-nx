@@ -35,6 +35,7 @@ from jsw_nx.packages.qs import qs
 from jsw_nx.packages.tmpl import tmpl
 from jsw_nx.packages.deep_each import deep_each
 from jsw_nx.packages.is_process_alive import is_process_alive
+from jsw_nx.packages.md5 import md5
 from jsw_nx.packages.replace_dict_all import replace_dict_all
 from jsw_nx.packages.uniq import uniq
 

@@ -42,6 +42,7 @@ nx.includes([1,2,3], 5) # => False
 - days
 - deep_each
 - is_process_alive
+- md5
 - param
 - parse_cookie
 - qs
