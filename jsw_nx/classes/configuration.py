@@ -1,3 +1,4 @@
+import os
 from .yaml import Yaml
 from .json import JSON
 from ..base.set import set
@@ -6,10 +7,13 @@ from ..base.get import get
 
 class Configuration:
     def __init__(self, **kwargs):
+        cwd = os.getcwd()
+        filepath = os.path.join(cwd, 'config.yml')
+
         self.engine = None
         self.data = None
         self.type = kwargs.get('type', 'yaml')
-        self.filepath = kwargs.get('filepath', './config.yaml')
+        self.filepath = kwargs.get('filepath', filepath)
         self.init_engine()
         self.init_data()
 
