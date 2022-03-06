@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jsw-nx"
-version = "1.0.60"
+version = "1.0.64"
 description = "Next toolkit for python."
 authors = ["feizheng <1290657123@qq.com>"]
 readme = "README.md"
@@ -10,7 +10,6 @@ homepage = "https://js.work"
 [tool.poetry.dependencies]
 python = "^3.6"
 psutil = "^5.9.0"
-"ruamel.yaml" = "^0.17.21"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
