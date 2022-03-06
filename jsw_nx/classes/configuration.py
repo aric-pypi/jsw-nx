@@ -39,7 +39,7 @@ class Configuration:
 
     def save(self):
         with open(self.filepath, 'w') as f:
-            f.write(self.engine.dump(self.data))
+            f.write(self.engine.stringify(self.data))
 
     def update(self, obj):
         self.sets(obj)

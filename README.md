@@ -51,6 +51,13 @@ nx.includes([1,2,3], 5) # => False
 - uniq
 
 ## next classes
++ configuration
+  - set
+  - get 
+  - sets
+  - gets
+  - save
+  - update
 + date
   - format 
   - now 
