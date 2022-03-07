@@ -12,3 +12,4 @@ def test_Date():
     assert nx.Date.now() == int(datetime.now().timestamp())
     assert isinstance(nx.Date.create('2019-12-04'), datetime) is True
     assert isinstance(nx.Date.create(1528797322), datetime) is True
+

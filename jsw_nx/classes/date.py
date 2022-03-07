@@ -46,12 +46,15 @@ class Date:
         return time.strftime(fmt, time.localtime(ptime))
 
     @classmethod
-    def random_date_list(cls, start, end, in_fmt='datetime', in_min_gap=75, in_count=10):
+    def random_date_list(cls, gap=75, count=10, fmt='datetime', **kwargs):
+        start = kwargs.get('start')
+        end = kwargs.get('end')
+
         no_unique_list = []
-        fmt = STANDARD_FORMAT[in_fmt] or in_fmt
-        for i in range(in_count * 2):
+        fmt = STANDARD_FORMAT[fmt] or fmt
+        for i in range(count * 2):
             last_el = no_unique_list[-1] if len(no_unique_list) > 0 else start
-            no_unique_list.append(cls.random_date(last_el, end, in_fmt, in_min_gap))
-        res = list(set(no_unique_list))[:in_count]
-        res.sort(key=lambda date: time.strptime(date, '%Y-%m-%d %H:%M:%S'))
+            no_unique_list.append(cls.random_date(last_el, end, fmt, gap))
+        res = list(set(no_unique_list))[:count]
+        res.sort(key=lambda date: time.strptime(date, fmt))
         return res
