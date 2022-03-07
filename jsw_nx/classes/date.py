@@ -51,10 +51,10 @@ class Date:
         end = kwargs.get('end')
 
         no_unique_list = []
-        fmt = STANDARD_FORMAT[fmt] or fmt
+        the_fmt = STANDARD_FORMAT[fmt] or fmt
         for i in range(count * 2):
             last_el = no_unique_list[-1] if len(no_unique_list) > 0 else start
             no_unique_list.append(cls.random_date(last_el, end, fmt, gap))
         res = list(set(no_unique_list))[:count]
-        res.sort(key=lambda date: time.strptime(date, fmt))
+        res.sort(key=lambda date: time.strptime(date, the_fmt))
         return res
