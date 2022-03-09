@@ -52,3 +52,19 @@ def test_base_get():
     assert nx.get(100, 'name') == None
     assert nx.get('some', 'name') == None
     assert nx.get('some', 'name', 'wonder') == 'wonder'
+
+
+def test_every():
+    arr = [1, 2, 3, 4, 5]
+    res1 = nx.every(arr, lambda v, i: v > 0)
+    res2 = nx.every(arr, lambda v, i: v > 3)
+    assert res1 == True
+    assert res2 == False
+
+
+def test_some():
+    arr = [-1, -2, -3, 4, -5]
+    res1 = nx.some(arr, lambda v, i: v > 0)
+    res2 = nx.some(arr, lambda v, i: v > 5)
+    assert res1 == True
+    assert res2 == False

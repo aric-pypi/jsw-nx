@@ -4,6 +4,7 @@ version = pkg_resources.get_distribution('jsw-nx').version
 __version__ = version
 
 # next base
+from jsw_nx.base.every import every
 from jsw_nx.base.filter import filter
 from jsw_nx.base.find import find
 from jsw_nx.base.find_index import find_index
@@ -17,6 +18,7 @@ from jsw_nx.base.map import map
 from jsw_nx.base.mix import mix
 from jsw_nx.base.reduce import reduce
 from jsw_nx.base.set import set
+from jsw_nx.base.some import some
 from jsw_nx.base.type import type
 
 # ruby style

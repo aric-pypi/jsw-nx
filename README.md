@@ -16,6 +16,7 @@ nx.includes([1,2,3], 5) # => False
 ```
 
 ## next core methods
+- base/every
 - base/filter
 - base/find
 - base/find_index
@@ -28,6 +29,7 @@ nx.includes([1,2,3], 5) # => False
 - base/map
 - base/reduce
 - base/set
+- base/some
 - base/type
 
 ## ruby style
