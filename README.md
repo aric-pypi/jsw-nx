@@ -19,6 +19,7 @@ nx.includes([1,2,3], 5) # => False
 - base/filter
 - base/find
 - base/find_index
+- base/flatten
 - base/foreach
 - base/forin
 - base/get

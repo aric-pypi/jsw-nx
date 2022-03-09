@@ -7,6 +7,7 @@ __version__ = version
 from jsw_nx.base.filter import filter
 from jsw_nx.base.find import find
 from jsw_nx.base.find_index import find_index
+from jsw_nx.base.flatten import flatten
 from jsw_nx.base.foreach import foreach
 from jsw_nx.base.forin import forin
 from jsw_nx.base.get import get
