@@ -1,6 +1,7 @@
 from .index import index
 from .type import type
 
+
 def includes(target, value):
     the_type = type(target)
 
