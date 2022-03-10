@@ -6,3 +6,6 @@ def forin(obj, fn):
     if the_type is list:
         for i in range(len(obj)):
             fn(i, obj[i])
+    if the_type is tuple:
+        for i in range(len(obj)):
+            fn(i, obj[i])
