@@ -1,2 +1,2 @@
 def map(arr, fn):
-    return [fn(v, i) for i, v in enumerate(arr)]
+    return [fn(v, i, arr) for i, v in enumerate(arr)]

@@ -1,3 +1,3 @@
 def foreach(arr, func):
-    for item in arr:
-        func(item)
+    for index, item in enumerate(arr):
+        func(item, index, arr)
