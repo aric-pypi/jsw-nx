@@ -42,6 +42,7 @@ from jsw_nx.packages.md5 import md5
 from jsw_nx.packages.replace_dict_all import replace_dict_all
 from jsw_nx.packages.sleep_random import sleep_random
 from jsw_nx.packages.uniq import uniq
+from jsw_nx.packages.uniq_in_order import uniq_in_order
 from jsw_nx.packages.urljoin import urljoin
 
 # next classes
