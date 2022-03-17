@@ -101,6 +101,19 @@ class FileUtils:
         return os.path.isdir(target)
 
     @classmethod
+    def rm(cls, target):
+        """
+        Remove a file or directory.
+        :param target:
+        :return:
+        """
+        if cls.exists(target):
+            if cls.isfile(target):
+                os.remove(target)
+            elif cls.isdir(target):
+                shutil.rmtree(target)
+
+    @classmethod
     def exists(cls, target):
         """
         Check if a file or dir exists.

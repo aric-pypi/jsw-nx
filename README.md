@@ -77,6 +77,7 @@ nx.includes([1,2,3], 5) # => False
   - cp_r
   - isfile
   - isdir
+  - rm
   - exists
   - gbk_to_utf8
 + tar
