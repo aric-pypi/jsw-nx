@@ -1,6 +1,6 @@
 def type(target):
     if isinstance(target, str):
-        return 'string'
+        return 'str'
     elif isinstance(target, int):
         return 'int'
     elif isinstance(target, float):
