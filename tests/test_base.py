@@ -68,3 +68,9 @@ def test_some():
     res2 = nx.some(arr, lambda v, i: v > 5)
     assert res1 == True
     assert res2 == False
+
+
+def test_parse_int():
+    assert nx.parse_int('123') == 123
+    assert nx.parse_int('123.456') == None
+    assert nx.parse_int('s233') == None
