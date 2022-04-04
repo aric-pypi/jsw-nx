@@ -17,6 +17,7 @@ from jsw_nx.base.index import index
 from jsw_nx.base.map import map
 from jsw_nx.base.mix import mix
 from jsw_nx.base.noop import noop
+from jsw_nx.base.noop import noop_scrapy_parse
 from jsw_nx.base.parse_int import parse_int
 from jsw_nx.base.reduce import reduce
 from jsw_nx.base.set import set
