@@ -1,4 +1,4 @@
-import subprocess
+import os
 
 
 class Pm2Manager:
@@ -7,16 +7,16 @@ class Pm2Manager:
 
     @staticmethod
     def start(app_name='all'):
-        subprocess.call(['pm2', 'start', app_name])
+        os.system(f'pm2 start {app_name}')
 
     @staticmethod
     def stop(app_name='all'):
-        subprocess.call(['pm2', 'stop', app_name])
+        os.system(f'pm2 stop {app_name}')
 
     @staticmethod
     def restart(app_name='all'):
-        subprocess.call(['pm2', 'restart', app_name])
+        os.system(f'pm2 restart {app_name}')
 
     @staticmethod
     def delete(app_name='all'):
-        subprocess.call(['pm2', 'delete', app_name])
+        os.system(f'pm2 delete {app_name}')
