@@ -20,3 +20,8 @@ class Pm2Manager:
     @staticmethod
     def delete(app_name='all'):
         os.system(f'pm2 delete {app_name}')
+
+    @staticmethod
+    def stop_and_del(app_name='all'):
+        os.system(f'pm2 stop {app_name}')
+        os.system(f'pm2 delete {app_name}')
