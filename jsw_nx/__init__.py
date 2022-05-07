@@ -12,6 +12,7 @@ from jsw_nx.base.flatten import flatten
 from jsw_nx.base.foreach import foreach
 from jsw_nx.base.forin import forin
 from jsw_nx.base.get import get
+from jsw_nx.base.getenv import getenv
 from jsw_nx.base.includes import includes
 from jsw_nx.base.index import index
 from jsw_nx.base.map import map
