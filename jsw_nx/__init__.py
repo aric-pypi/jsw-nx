@@ -44,6 +44,7 @@ from jsw_nx.packages.get_domain import get_domain
 from jsw_nx.packages.html2text import html2text
 from jsw_nx.packages.is_process_alive import is_process_alive
 from jsw_nx.packages.md5 import md5
+from jsw_nx.packages.notify import notify
 from jsw_nx.packages.replace_dict_all import replace_dict_all
 from jsw_nx.packages.sleep_random import sleep_random
 from jsw_nx.packages.uniq import uniq
