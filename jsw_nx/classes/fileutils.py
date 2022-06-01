@@ -126,6 +126,7 @@ class FileUtils:
     def gbk_to_utf8(cls, source, target, callback=None):
         """
         Convert GBK to UTF-8.
+        :param source:
         :param target:
         :param callback:
         :return:
@@ -136,3 +137,22 @@ class FileUtils:
                     if callback:
                         line = callback(line)
                     dst.write(line)
+
+    @classmethod
+    def read_lines(cls, filename, **kwargs):
+        """
+        Read lines.
+        :param filename:
+        :param kwargs:
+        :return:
+        """
+        flag = kwargs.get('flag', 'r')
+        callback = kwargs.get('callback', lambda ln: ln.strip() if ln.strip() else None)
+        handle = open(filename, flag)
+        lines = handle.readlines()
+        result = []
+        for line in lines:
+            res = callback(line)
+            if res:
+                result.append(callback(line))
+        return result
