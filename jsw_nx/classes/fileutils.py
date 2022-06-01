@@ -155,4 +155,5 @@ class FileUtils:
             res = callback(line)
             if res:
                 result.append(callback(line))
+        handle.close()
         return result
