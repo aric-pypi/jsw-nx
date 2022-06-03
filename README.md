@@ -44,6 +44,7 @@ nx.includes([1,2,3], 5) # => False
 ## next packages
 - days
 - deep_each
+- filesize
 - is_process_alive
 - md5
 - param
