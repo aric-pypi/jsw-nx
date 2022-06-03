@@ -41,6 +41,7 @@ from jsw_nx.packages.parse_cookie import parse_cookie
 from jsw_nx.packages.qs import qs
 from jsw_nx.packages.tmpl import tmpl
 from jsw_nx.packages.deep_each import deep_each
+from jsw_nx.packages.filesize import filesize
 from jsw_nx.packages.get_domain import get_domain
 from jsw_nx.packages.html2text import html2text
 from jsw_nx.packages.is_process_alive import is_process_alive
