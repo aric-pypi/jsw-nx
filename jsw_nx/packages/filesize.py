@@ -1,5 +1,6 @@
 import os
 
+# https://www.alpharithms.com/python-get-file-size-271811/
 
 def filesize(filename):
     size = os.stat(filename).st_size
