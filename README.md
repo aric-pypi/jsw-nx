@@ -50,6 +50,7 @@ nx.includes([1,2,3], 5) # => False
 - parse_cookie
 - qs
 - replace_dict_all
+- sample
 - [tmpl](https://js.work/posts/34ef06b7870ec)
 - uniq
 - urljoin
