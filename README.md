@@ -47,7 +47,7 @@ nx.includes([1,2,3], 5) # => False
 - env_select
 - filesize
 - get_domain
-- get_env
+- getenv
 - html2text
 - is_process_alive
 - md5
