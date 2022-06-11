@@ -44,6 +44,7 @@ from jsw_nx.packages.deep_each import deep_each
 from jsw_nx.packages.env_select import env_select
 from jsw_nx.packages.filesize import filesize
 from jsw_nx.packages.get_domain import get_domain
+from jsw_nx.packages.get_env import get_env
 from jsw_nx.packages.html2text import html2text
 from jsw_nx.packages.is_process_alive import is_process_alive
 from jsw_nx.packages.md5 import md5

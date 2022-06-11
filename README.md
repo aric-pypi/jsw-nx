@@ -44,7 +44,11 @@ nx.includes([1,2,3], 5) # => False
 ## next packages
 - days
 - deep_each
+- env_select
 - filesize
+- get_domain
+- get_env
+- html2text
 - is_process_alive
 - md5
 - param
