@@ -61,6 +61,7 @@ from jsw_nx.classes.date import Date
 from jsw_nx.classes.fileutils import FileUtils as fileutils
 from jsw_nx.classes.tar import Tar as tar
 from jsw_nx.classes.json import JSON
+from jsw_nx.classes.lc_option import LcOption
 from jsw_nx.classes.pm2_manager import Pm2Manager
 from jsw_nx.classes.yaml import Yaml
 from jsw_nx.classes.ymd import Ymd
